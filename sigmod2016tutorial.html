@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+<TITLE>SIGMOD 2016 Tutorial: Automatic Entity Recognition and Typing in Massive Text Data</TITLE>
+<style type="text/css">
+    html, body {
+        margin: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    body {
+        padding: 0 20px;
+    }
+
+    #main {
+        margin: 0 200; /* in case you want to set a fixed width on this as well */
+    }
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80163118-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</HEAD>
+<BODY BGCOLOR="FFFFFF">
+<CENTER><IMG SRC="SIGMOD2016-logo.jpg" height="150" width="250" ALIGN="BOTTOM"> </CENTER>
+<HR>
+
+<div id="main">
+<H1>SIGMOD 2016 Tutorial: Automatic Entity Recognition and Typing in Massive Text Data</H1>
+In today's computerized and information-based society, we are constantly exposed to vast amounts of natural language text data, ranging from news articles, product reviews, advertisements, to a wide range of user-generated content from social media. To turn such massive unstructured text data into actionable knowledge, one of the grand challenges is to gain an understanding of entities and the relationships between them. In this tutorial, we introduce data-driven methods to recognize typed
+entities of interest in different kinds of text data (especially in massive, domain-specific text data). These methods can automatically identify token spans as entity mentions in text and label their types (eg, people, product, organization) in a scalable way. We demonstrate on real datasets including news articles and yelp reviews how these typed entities aid in knowledge discovery and management.
+
+<br><br>
+<CENTER>
+    <a href="http://www-bcf.usc.edu/~xiangren/">Xiang Ren<sup>1</sup></a>,  <a href="http://web.engr.illinois.edu/~elkishk2/">Ahmed El-Kishky<sup>1</sup></a>,  <a href="http://nlp.cs.rpi.edu/hengji.html">Heng Ji<sup>2</sup></a>,  <a href="http://hanj.cs.illinois.edu/">Jiawei Han<sup>1</sup></a>
+<br><br>
+University of Illinois at Urbana Champaign<sup>1</sup>, Rensselaer Polytechnic Institute<sup>2</sup>
+</CENTER>
+<H3>Outline</H3>
+<ol>
+  <li>Introduction to entity recognition and typing.</li>
+  <li>Entity recognition: An overview and phrase-mining approaches</li>
+    <ul>
+     <li>Supervised and Semisupervised Entity Mention Detection</li>
+     <li>Unsupervised Entity Mention Detection</li>
+     <li>Weakly and Distantly Supervised Mention Detection</li>
+    </ul>
+  <li>Entity typing: An overview and network mining approach</li>
+    <ul>
+     <li>Supervised Entity Typing</li>
+     <li>Semi-supervised Entity Typing</li>
+     <li>Entity linking for typing</li>
+     <li>Weakly-supervised Entity Typing</li>
+     <li>Unsupervised Entity Typing</li>
+     <li>Distantly Supervised Entity Typing</li>
+    </ul>
+  <li>Trends and research problems</li>
+</ol>
+
+<H3>Slides</H3>
+[<a href="https://www.dropbox.com/s/5m7xed4wzzp5pn6/SIGMOD-Tutorial-v1.pdf?dl=0">PDF</a>]
+<H3>Code</H3>
+[<a href="http://shanzhenren.github.io/ClusType/">ClusType</a>][<a href="https://github.com/shangjingbo1226/SegPhrase">SegPhrase</a>][<a href="http://web.engr.illinois.edu/~elkishk2/code/ToPMine.zip">TopMine</a>][<a href="https://github.com/shanzhenren/PLE">PLE</a>]
+<H3>Publications</H3>
+
+<ul>
+    <li>Xiang Ren*, Wenqi He*, Meng Qu, Heng Ji, Clare R. Voss, Jiawei Han.<a href="http://arxiv.org/pdf/1602.05307v1.pdf"> Label Noise Reduction in Entity Typing by Heterogeneous Partial-Label Embedding</a>, in Proc. 2016 ACM SIGKDD Int. Conf. on Knowledge Discovery and Data Mining (KDD'16)</li>
+    
+    <li>Ahmed El-Kishky, Yanglei Song, Chi Wang, Clare R Voss, and Jiawei Han, <a href="http://www.vldb.org/pvldb/vol8/p305-ElKishky.pdf">Scalable Topical Phrase Mining from Text Corpora</a>, in Proceedings of the VLDB Endowment, vol. 8, no. 3, VLDB, 2015.</li>
+    <li>Xiang Ren, Ahmed El-Kishky, Chi Wang, Fangbo Tao, Clare R. Voss, Heng Ji, and Jiawei Han, <a href="http://research.microsoft.com/pubs/252131/kdd15clustype.pdf">ClusType: Effective Entity Recognition and Typing by Relation Phrase-Based Clustering</a>, in Proc. 2015 ACM SIGKDD Int. Conf. on Knowledge Discovery and Data Mining (KDD'15)
+    <li>Jialu Liu, Jingbo Shang, Chi Wang, Xiang Ren, and Jiawei Han, <a href="http://research.microsoft.com/pubs/241783/sigmod15SegPhrase.pdf">Mining Quality Phrases from Massive Text Corpora</a>, in 2015 ACM SIGMOD Int. Conf. on Management of Data (SIGMOD'15)</li>
+</ul>
+
+<H3>Presenters</H3>
+<br>
+<IMG SRC="ren.png" height="140" width="130" align="middle">
+<P><b>Xiang Ren</b>, Ph.D. candidate, Department of Computer Science, Univ. of Illinois at Urbana-Champaign. His research focuses on knowledge acquisition from text data and mining linked data. In 2016, he received a Google PhD Fellowship for his work in Structured Data and Database Managment. He is the recipient of C. L. and Jane W.-S. Liu Award and Yahoo!-DAIS Research Excellence Gold Award in 2015. He received Microsoft Young Fellowship from Microsoft Research Asia in 2012.
+<br>
+<IMG SRC="elkishky.png" height="140" width="120" ALIGN="BOTTOM">
+<br>
+<P><b>Ahmed El-Kishky</b>, Ph.D. candidate, Department of Computer Science, Univ. of Illinois at Urbana-Champaign. His research interests include mining large unstructured data, text mining, and network mining. He is the recipient of both the National Science Foundation Graduate Research Fellowship as well as National Defense Science and Engineering Fellowship.
+<br>
+<IMG SRC="ji.jpg" height="140" width="120" ALIGN="BOTTOM">
+<br>
+<b>Heng Ji</b>, Edward P. Hamilton Development Chair Associate Professor of Computer Science Department of Rensselaer Polytechnic Institute. Her research interests focus on Natural Language Processing and its connections with Data Mining and Vision. She received "AI's 10 to Watch" Award by IEEE Intelligent Systems in 2013 and NSF CAREER award in 2009. She coordinated the NIST TAC Knowledge Base Population task in 2010, 2011, 2014, 2015 and 2016.
+<br>
+<IMG SRC="han.png" height="140" width="120" ALIGN="BOTTOM">
+<br>
+<b>Jiawei Han</b>, Abel Bliss Professor, Department of Computer Science, Univ. of Illinois at Urbana-Champaign. His research areas encompass data mining, data ware-housing, information network analysis, and database systems, with over 600 conference and journal publications. He is Fellow of ACM and Fellow of IEEE, and received ACM SIGKDD Innovation Award (2004), IEEE Computer Society Technical Achievement Award (2005), and IEEE Computer Society W. Wallace McDowell Award (2009). His co-authored textbook "Data Mining: Concepts and Techniques", 3rd ed., (Morgan Kaufmann, 2011) has been adopted popularly world-wide.
+</div>
+<HR>
+</BODY>
+</HTML>
+
+

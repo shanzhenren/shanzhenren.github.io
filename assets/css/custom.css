@@ -1,0 +1,128 @@
+a {color:#b75858; font-weight:400; text-decoration:none;}
+a:hover {color:#872828; text-decoration:none;}
+body {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.text-small {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.index {
+    font-family: "Open Sans", Segoe,"Segoe UI", "Lucida Sans Unicode","Lucida Grande", "Avenir","Seravek","Ubuntu",
+        "DejaVu Sans","Trebuchet MS",Verdana,Arial,sans-serif;
+}
+
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 800px;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.navs {
+    font-size: 1rem;
+}
+.navs a{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* publication page color schema */
+
+.pubs a {
+    color: #0055aa;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  .pubs a:hover {
+    color: #013e7c;
+    text-decoration: underline;
+  }
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+
+a.label {
+display: inline;
+padding: .2em .6em .3em;
+font-size: 75%;
+font-weight: 700;
+line-height: 1;
+color: #fff;
+text-align: center;
+white-space: nowrap;
+vertical-align: baseline;
+border-radius: .25em;
+}
+a.label:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+a.label.code{
+    background-color: #007bff;
+    border-color: #286090;
+}
+    a.label.code:hover{
+        background-color:#007bff;
+        border-color: #286090;
+    }
+
+a.label.project{
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+a.label.project:hover{
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+a.label.misc{
+    background-color: #5bc0de;
+      border-color: #46b8da;
+}
+a.label.misc:hover{
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+a.label.blog{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+a.label.blog:hover{
+    background-color: #449d44;
+    border-color: #255625;
+}
+
+[v-cloak] { display:none; }
+
+.index-left{
+    margin-right: -2rem;
+    margin-left: 2rem;
+}
+
+
+.index-right{
+    margin-left: -2rem;
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .index-left{
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+    .index-right{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+  }
+

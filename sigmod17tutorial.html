@@ -1,0 +1,150 @@
+<HTML>
+<HEAD>
+<TITLE>SIGMOD 2017 Tutorial: Building Structured Databases of Factual Knowledge from Massive Text Corpora</TITLE>
+<style type="text/css">
+    html, body {
+        margin: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    body {
+        padding: 0 20px;
+    }
+
+    #main {
+        margin: 0 200; /* in case you want to set a fixed width on this as well */
+    }
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80163118-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</HEAD>
+<BODY BGCOLOR="FFFFFF">
+<CENTER><IMG SRC="sigmod17_logo.jpg" height="120" width="430" ALIGN="BOTTOM"> </CENTER>
+<HR>
+
+<div id="main">
+<H1>SIGMOD 2017 Tutorial: Building Structured Databases of Factual Knowledge from Massive Text Corpora</H1>
+<H2>Time: 9-10:30am, May 19</H2>
+<H2>Location: Stevens Salon C-5</H2>
+In today's computerized and information-based society, people are inundated with vast amounts of text data, ranging from news articles, social media post, scientific publications, to a wide range of textual information from various domains (corporate reports, advertisements, legal acts, medical reports). To turn such massive unstructured text data into structured, actionable knowledge, one of the grand challenges is to gain an understanding of the factual information (e.g., entities, attributes, relations) in the text.
+<br>
+<br>
+In this tutorial, we introduce data-driven methods on mining structured facts (i.e., entities and their relations/attributes for types of interest) from massive text corpora, to construct structured databases of factual knowledge (called StructDBs). State-of-the-art information extraction systems have strong reliance on large amounts of task/corpus-specific labeled data (usually created by domain experts). In practice, the scale and efficiency of such a manual annotation process are rather limited, especially when dealing with text corpora of various kinds (domains, languages, genres). We focus on methods that are minimally-supervised, domain-independent, and language-independent for timely StructDB construction across various application domains (news, social media, biomedical, business), and demonstrate on real datasets how these StructDBs aid in data exploration and knowledge discovery.
+
+
+<br><br>
+<CENTER>
+    <a href="http://www-bcf.usc.edu/~xiangren/">Xiang Ren</a> (xren7@illinois.edu),  <a href="meng-jiang.com">Meng Jiang</a>,  <a href="http://web.engr.illinois.edu/~shang7/">Jingbo Shang</a>,  <a href="http://hanj.cs.illinois.edu/">Jiawei Han</a>
+<br><br>
+University of Illinois at Urbana Champaign
+</CENTER>
+
+
+<H3>Outline & Slides</H3>
+<ol>
+  <li>Introduction [<a href="sigmod17-StructNet-Intro.pdf">PDF</a>]</li>
+    <ul>
+     <li>Structurd network of factual knowledge</li>
+     <li>Text to network to knowledge</li>
+    </ul>
+  <li>Part I: Quality phrase mining: An overview and data-driven approaches [<a href="sigmod17-StructNet-part1.pdf">PDF</a>]</li>
+    <ul>
+     <li>Supervised approaches</li>
+     <li>Unsupervised approaches</li>
+     <li>Weakly and Distantly Supervised phrase mining</li>
+    </ul>
+  <li>Part II: Entity and Relation typing: An overview and a joint typing approach [<a href="sigmod17-StructNet-part2.pdf">PDF</a>]</li>
+    <ul>
+     <li>Entity recognition and coarse-grained typing</li>
+     <li>Fine-grained entity typing</li>
+     <li>Joint extraction of typed entities and relations</li>
+    </ul>
+  <li>Part III: Attribute discovery for network construction [<a href="sigmod17-StructNet-part3.pdf">PDF</a>]</li>
+    <ul>
+     <li>Supervised attribute learning</li>
+     <li>Pattern-based boostrapping</li>
+    </ul>
+  <li>Summary and future directions [<a href="sigmod17-StructNet-summary.pdf">PDF</a>]</li>
+</ol>
+
+Download [<a href="sigmod17-StructNet.pdf">PDF</a>] for entire tutorial.
+<br>
+<br>
+
+
+<H3>Code & Systems</H3>
+[<a href="https://github.com/shanzhenren/CoType">CoType</a>]
+[<a href="https://github.com/shanzhenren/AFET">AFET</a>]
+[<a href="https://github.com/shanzhenren/PLE">PLE</a>]
+[<a href="http://shanzhenren.github.io/ClusType/">ClusType</a>]
+[<a href="https://github.com/shangjingbo1226/AutoPhrase">AutoPhrase</a>]
+[<a href="https://github.com/shangjingbo1226/SegPhrase">SegPhrase</a>][<a href="http://web.engr.illinois.edu/~elkishk2/code/ToPMine.zip">TopMine</a>]
+[<a href="https://github.com/mjiang89/MetaPAD">MetaPAD</a>]
+<br>
+<br>
+
+
+<H3>Publications</H3>
+<ul>
+    <li>
+    <p><a href="https://arxiv.org/pdf/1703.04213.pdf" target="_blank">MetaPAD: Meta Pattern Discovery from Massive Text Corpora</a><br />
+    Meng Jiang, Jingbo Shang, Taylor Cassidy, Xiang Ren, Lance M. Kaplan, Timothy P. Hanratty, Jiawei Han.<br/>
+    <i>ACM SIGKDD Int. Conf. on Knowledge Discovery and Data Mining</i> (<b>KDD</b>), 2017.</i><br>
+    </p>
+    </li>
+    <li>
+    <p><a href="https://arxiv.org/pdf/1610.08763v1.pdf" target="_blank">CoType: Joint Extraction of Typed Entities and Relations with Knowledge Bases</a><br />
+    Xiang Ren, Zeqiu Wu, Wenqi He, Meng Qu, Clare R. Voss, Heng Ji, Tarek F. Abdelzaher, Jiawei Han.<br/>
+    <i>International World-Wide Web Conference</i> (<b>WWW</b>), 2017.</i><br>
+    </p>
+    </li>
+    <li><a href="http://arxiv.org/pdf/1602.05307v1.pdf"> Label Noise Reduction in Entity Typing by Heterogeneous Partial-Label Embedding</a><br>
+    Xiang Ren, Wenqi He, Meng Qu, Heng Ji, Clare R. Voss, Jiawei Han. <br>
+    In Proc. 2016 ACM SIGKDD Int. Conf. on Knowledge Discovery and Data Mining (<b>KDD</b>), 2016.</li>
+    <li>
+    <p><a href="16-AFET.pdf" target="_blank">AFET: Automatic Fine-Grained Entity Typing by Hierarchical Partial-Label Embedding</a><br>
+    Xiang Ren, Wenqi He, Meng Qu, Lifu Huang, Heng Ji, Jiawei Han.<br>
+    <i>Conference on Empirical Methods in Natural Language Processing</i> (<b>EMNLP</b>), 2016.</p>
+    </li>
+    <li>Ahmed El-Kishky, Yanglei Song, Chi Wang, Clare R Voss, and Jiawei Han, <a href="http://www.vldb.org/pvldb/vol8/p305-ElKishky.pdf">Scalable Topical Phrase Mining from Text Corpora</a>, in Proceedings of the VLDB Endowment, vol. 8, no. 3, <b>VLDB</b>, 2015.</li>
+    <br>
+    <li>Xiang Ren, Ahmed El-Kishky, Chi Wang, Fangbo Tao, Clare R. Voss, Heng Ji, and Jiawei Han, <a href="http://research.microsoft.com/pubs/252131/kdd15clustype.pdf">ClusType: Effective Entity Recognition and Typing by Relation Phrase-Based Clustering</a>, ACM SIGKDD Int. Conf. on Knowledge Discovery and Data Mining (<b>KDD</b>), 2015.</li>
+    <br>
+    <li>Jialu Liu, Jingbo Shang, Chi Wang, Xiang Ren, and Jiawei Han, <a href="http://research.microsoft.com/pubs/241783/sigmod15SegPhrase.pdf">Mining Quality Phrases from Massive Text Corpora</a>, in 2015 ACM SIGMOD Int. Conf. on Management of Data (<b>SIGMOD</b>), 2015.</li>
+</ul>
+<br>
+
+<H3>Presenters</H3>
+<br>
+<IMG SRC="ren.png" height="140" width="130" align="middle">
+<P><b>Xiang Ren</b>, Ph.D. candidate, Department of Computer Science, Univ. of Illinois at Urbana-Champaign. His research focuses on creating computational tools for better understanding and exploring massive text data. He has published over 25 papers in major conferences. He received Google PhD Fellowship in Structured Data and Database Management in 2016, KDD Rising Star by Microsoft Academic Search in 2016, C. W. Gear Outstanding Graduate Student Award by CS@Illinois in 2016, and Yahoo!-DAIS Research Excellence Award in 2015. Mr. Ren has rich experiences in delivering tutorials in major conferences, including SIGKDD 2015, SIGMOD 2016 and WWW 2016.
+<br>
+<br>
+<IMG SRC="meng-jiang.jpg" height="160" width="130" align="middle">
+<br>
+<P><b>Meng Jiang</b>, Postdoctoral Research Associate, Department of Computer Science, Univ.\ of Illinois at Urbana-Champaign. His research focuses on behavioral modeling and social media analysis. He got his Ph.D. of Computer Science from Tsinghua University, Beijing in 2015. His Ph.D. thesis won the Dissertation Award at Tsinghua. His recent research won the SIGKDD 2014 Best Paper Finalist. His ICDM 2015 Tutorial won the honorarium.
+<br>
+<br>
+<IMG SRC="jingbo.jpg" height="140" width="130" align="middle">
+<br>
+<b>Jingbo Shang</b>, Ph.D. candidate, Department of Computer Science, Univ.\ of Illinois at Urbana-Champaign. His research focuses on mining and constructing structured knowledge from massive text corpora. He is the recipient of Computer Science Excellence Scholarship and Grand Prize of Yelp Dataset Challenge in 2015.
+<br>
+<br>
+<IMG SRC="jiawei-han.jpg" height="160" width="130" align="middle">
+<br>
+<b>Jiawei Han</b>, Abel Bliss Professor, Department of Computer Science, Univ. of Illinois at Urbana-Champaign. His research areas encompass data mining, data ware-housing, information network analysis, and database systems, with over 600 conference and journal publications. He is Fellow of ACM and Fellow of IEEE, and received ACM SIGKDD Innovation Award (2004), IEEE Computer Society Technical Achievement Award (2005), and IEEE Computer Society W. Wallace McDowell Award (2009). His co-authored textbook "Data Mining: Concepts and Techniques", 3rd ed., (Morgan Kaufmann, 2011) has been adopted popularly world-wide.
+</div>
+<HR>
+</BODY>
+</HTML>
+
+
